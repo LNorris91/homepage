@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'roboto';
+  src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'playfair';
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+* {
+  background-color: white;
+  color: black;
+  font-family: 'playfair', sans-serif;
+}
+
+button {
+  border-style: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.icon img {
+  width: 20px;
+}
