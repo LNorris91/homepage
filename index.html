@@ -7,10 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    Hello, World
-
-    <button class="icon">
-      <img src="icons/github-original.svg" />
-    </button>
+    <div id="headerBackground"></div>
+    <header>
+      <section class="headerPic">
+        <img
+          alt="Luke Norris"
+          srcset="portraits/luke-1-300.JPG 300w, portraits/luke-1-800.JPG 800w"
+          sizes="40vw"
+        />
+        <div id="photoName">Luke Norris</div>
+      </section>
+      <section class="aboutMe">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <div class="buttonLinks">
+          <button>
+            <a href="https://github.com/LNorris91" target="_blank"
+              ><img src="icons/github-original.svg" alt="github"
+            /></a>
+          </button>
+          <button><img src="icons/linkedin-plain.svg" alt="linked-in" /></button>
+          <button><img src="icons/twitter-original.svg" alt="twitter or X" /></button>
+        </div>
+      </section>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>

@@ -9,19 +9,87 @@
 }
 
 * {
-  background-color: white;
-  color: black;
+  box-sizing: border-box;
   font-family: 'playfair', sans-serif;
 }
 
-button {
-  border-style: none;
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-button:hover {
+header,
+main,
+footer {
+  max-width: 850px;
+}
+
+#headerBackground {
+  background-color: rgb(27, 151, 200);
+  width: 150vw;
+  height: 400px;
+  z-index: -1;
+  position: absolute;
+  transform-origin: bottom left;
+  transform: rotate(-10deg);
+}
+
+header {
+  display: flex;
+  margin: 30px 40px;
+  align-items: center;
+}
+
+.headerPic {
+  height: 300px;
+  position: relative;
+  box-shadow: rgb(141, 141, 141) -2px 2px 10px;
+}
+
+.headerPic img {
+  height: 100%;
+}
+
+#photoName {
+  position: absolute;
+  bottom: 1px;
+  left: 10px;
+  font-size: 80px;
+  color: white;
+  text-shadow: rgb(141, 141, 141) -2px 2px 3px;
+}
+
+.aboutMe {
+  background-color: white;
+  padding: 15px 30px 15px 15px;
+  box-shadow: rgb(141, 141, 141) 2px 2px 10px;
+}
+
+.buttonLinks {
+  display: flex;
+  gap: 18px;
+  justify-self: flex-end;
+  transform: translatex(10px);
+}
+
+.buttonLinks button {
+  border: none;
+}
+
+.buttonLinks button:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
-.icon img {
+.buttonLinks img {
   width: 20px;
+}
+
+.aboutMe p {
+  color: rgb(87, 87, 87);
+  font: 0.9rem 'roboto', sans-serif;
+  transform: translateY(-10px);
 }
