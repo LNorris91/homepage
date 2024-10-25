@@ -10,7 +10,8 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'playfair', sans-serif;
+  font-family: 'playfair';
+  font-weight: lighter;
 }
 
 body {
@@ -25,6 +26,7 @@ header,
 main,
 footer {
   max-width: 850px;
+  margin: 30px 40px;
 }
 
 #headerBackground {
@@ -39,7 +41,6 @@ footer {
 
 header {
   display: flex;
-  margin: 30px 40px;
   align-items: center;
 }
 
@@ -58,6 +59,7 @@ header {
   bottom: 1px;
   left: 10px;
   font-size: 80px;
+  margin: 0px;
   color: white;
   text-shadow: rgb(141, 141, 141) -2px 2px 3px;
 }
@@ -77,6 +79,7 @@ header {
 
 .buttonLinks button {
   border: none;
+  background: none;
 }
 
 .buttonLinks button:hover {
@@ -92,4 +95,27 @@ header {
   color: rgb(87, 87, 87);
   font: 0.9rem 'roboto', sans-serif;
   transform: translateY(-10px);
+}
+
+main {
+  position: relative;
+}
+
+main h1 {
+  left: 0px;
+  margin-bottom: 10px;
+}
+
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  row-gap: 30px;
+  justify-content: space-evenly;
+}
+
+.project {
+  width: 250px;
+  height: 300px;
+  border: 1px solid black;
 }
