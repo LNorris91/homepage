@@ -24,13 +24,13 @@ body {
 
 header,
 main,
-footer {
+.footerContent {
   max-width: 850px;
   margin: 30px 40px;
 }
 
 #headerBackground {
-  background-color: rgb(27, 151, 200);
+  background-color: rgb(14, 153, 185);
   width: 150vw;
   height: 400px;
   z-index: -1;
@@ -118,4 +118,46 @@ main h1 {
   width: 250px;
   height: 300px;
   border: 1px solid black;
+}
+footer {
+  width: 100vw;
+  background-color: rgb(14, 153, 185);
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  padding: 15px 0px;
+  color: rgb(231, 229, 229);
+}
+
+.footerContent {
+  display: flex;
+  gap: 15px;
+}
+
+.footerPic {
+  height: 300px;
+}
+
+.footerPic img {
+  height: 100%;
+}
+
+.footerInfo p img {
+  width: 20px;
+  transform: translateY(5px);
+  filter: invert();
+}
+
+.footerInfo h1 {
+  font-size: 2rem;
+  margin-top: 0px;
+}
+
+.footerInfo p {
+  font-family: 'roboto';
+}
+
+#footerButtons {
+  justify-self: flex-start;
+  transform: translate(-7px, 5px);
 }
