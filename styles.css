@@ -19,7 +19,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden;
 }
 
 header,
@@ -30,13 +29,13 @@ main,
 }
 
 #headerBackground {
-  background-color: rgb(14, 153, 185);
-  width: 150vw;
-  height: 400px;
-  z-index: -1;
   position: absolute;
-  transform-origin: bottom left;
-  transform: rotate(-10deg);
+  background-color: rgb(14, 153, 185);
+  width: 100vw;
+  height: 450px;
+  z-index: -1;
+  transform-origin: top left;
+  transform: skewY(-15deg);
 }
 
 header {
@@ -77,7 +76,7 @@ header {
   transform: translatex(10px);
 }
 
-.buttonLinks button {
+button {
   border: none;
   background: none;
 }
@@ -109,16 +108,72 @@ main h1 {
 .projectContainer {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   row-gap: 30px;
   justify-content: space-evenly;
 }
 
 .project {
-  width: 250px;
+  width: 260px;
   height: 300px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgb(141, 141, 141) 2px 2px 10px;
+  transition-property: transform box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+  will-change: transform box-shadow;
 }
+
+.project:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: rgb(141, 141, 141) 8px 8px 15px;
+  cursor: pointer;
+}
+
+.projectScreenshot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60%;
+  background-color: rgb(144, 106, 34);
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  padding: 50px;
+}
+
+.projectInfo {
+  position: relative;
+  padding: 0px 20px;
+  overflow-y: scroll;
+}
+
+.projectInfo h3 {
+  margin: 6px 0px;
+}
+
+.projectInfo p {
+  font-family: 'roboto';
+  font-size: 0.9rem;
+}
+
+.projectLinks {
+  position: absolute;
+  transform: translate(155px, -28px);
+  display: flex;
+  gap: 10px;
+}
+
+.projectLinks img {
+  width: 20px;
+}
+
+.projectLinks button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 footer {
   width: 100vw;
   background-color: rgb(14, 153, 185);
@@ -131,7 +186,7 @@ footer {
 
 .footerContent {
   display: flex;
-  gap: 15px;
+  gap: 25px;
 }
 
 .footerPic {
@@ -160,4 +215,124 @@ footer {
 #footerButtons {
   justify-self: flex-start;
   transform: translate(-7px, 5px);
+}
+
+@media (max-width: 1000px) {
+  header {
+    margin-bottom: 100px;
+  }
+  .headerPic {
+    transform: translateX(70px);
+    height: 275px;
+    z-index: 1;
+  }
+
+  #photoName {
+    font-size: 50px;
+    transform: translate(290px, -190px);
+    text-shadow: rgb(74, 74, 74) -2px 2px 3px;
+  }
+
+  .aboutMe {
+    transform: translate(-75px, 120px);
+    width: 300px;
+    height: 310px;
+  }
+
+  .aboutMe h2 {
+    transform: translateX(150px);
+  }
+
+  .aboutMe p {
+    font-size: 0.8rem;
+    margin-bottom: -10px;
+  }
+
+  #block {
+    float: left;
+    width: 140px;
+    height: 100px;
+  }
+
+  @media (max-width: 620px) {
+    header {
+      flex-direction: column;
+      margin-bottom: 70px;
+    }
+
+    .headerPic {
+      height: 450px;
+      transform: translate(0);
+    }
+
+    #photoName {
+      transform: translate(20px, -10px);
+      font-size: 40px;
+    }
+
+    .aboutMe {
+      transform: translate(0);
+      box-shadow: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .aboutMe h2 {
+      transform: translate(0);
+    }
+
+    .aboutMe p {
+      font-size: 1rem;
+      line-height: 1.4rem;
+      margin: -5px 0px 15px;
+    }
+
+    #block {
+      width: 0px;
+      height: 0px;
+    }
+
+    main h1 {
+      text-align: center;
+    }
+
+    footer {
+      padding-bottom: 0px;
+    }
+
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+    }
+
+    .footerInfo {
+      padding: 0px 50px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footerInfo h1 {
+      align-self: center;
+    }
+
+    .footerInfo p {
+      margin: 8px 15px;
+    }
+
+    #footerButtons {
+      align-self: center;
+      margin-top: 15px;
+    }
+
+    .footerPic {
+      width: 100vw;
+      height: auto;
+    }
+
+    .footerPic img {
+      width: 100%;
+    }
+  }
 }

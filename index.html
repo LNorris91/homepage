@@ -10,15 +10,15 @@
     <div id="headerBackground"></div>
     <header>
       <section class="headerPic">
-        <img
-          alt="Luke Norris"
-          srcset="portraits/luke-1-300.JPG 300w, portraits/luke-1-800.JPG 800w"
-          sizes="40vw"
-        />
+        <picture>
+          <source srcset="portraits/luke-1-800.JPG" media="(min-width: 620px)" />
+          <img src="portraits/luke-1-crop.JPG" alt="" />
+        </picture>
         <p id="photoName">Luke Norris</p>
       </section>
       <section class="aboutMe">
         <h2>About Me</h2>
+        <div id="block"></div>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -39,12 +39,72 @@
     <main>
       <h1>My work</h1>
       <div class="projectContainer">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="project" id="project1">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
+        <div class="project" id="project2">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
+        <div class="project" id="project3">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
+        <div class="project" id="project4">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
+        <div class="project" id="project5">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
+        <div class="project" id="project6">
+          <div class="projectScreenshot"><p>screenshot of project</p></div>
+          <div class="projectInfo">
+            <h3>Project name</h3>
+            <div class="projectLinks">
+              <button><img src="icons/github-original.svg" alt="github" /></button>
+              <button><img src="icons/open-in-new.svg" alt="view project in new page" /></button>
+            </div>
+            <p>short description of the project. Just a couple sentences will do.</p>
+          </div>
+        </div>
       </div>
     </main>
     <footer>
@@ -69,11 +129,11 @@
           </div>
         </section>
         <section class="footerPic">
-          <img
-            alt="Luke Norris"
-            srcset="portraits/luke-2-300.JPG 300w, portraits/luke-2-800.JPG 800w"
-            sizes="40vw"
-          />
+          <picture>
+            <source srcset="portraits/luke-2-800.JPG" media="(min-width: 810px)" />
+            <source srcset="portraits/luke-2-crop.JPG" media="(min-width: 620px)" />
+            <img src="portraits/luke-2-800.JPG" alt="" />
+          </picture>
         </section>
       </div>
     </footer>
