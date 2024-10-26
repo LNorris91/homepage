@@ -103,6 +103,7 @@ main {
 main h1 {
   left: 0px;
   margin-bottom: 10px;
+  width: 130px;
   transition: transform 1s;
 }
 
@@ -125,7 +126,6 @@ main h1 {
   transition-timing-function: ease-in-out;
   will-change: transform box-shadow;
   background-color: rgb(212, 212, 212);
-
 }
 
 .project:hover {
@@ -138,7 +138,7 @@ main h1 {
   align-items: center;
   justify-content: center;
   height: 60%;
-  background-color: rgb(144, 106, 34); */
+  background-color: rgb(144, 106, 34);
   text-align: center;
   font-size: 1.8rem;
   color: white;
@@ -310,7 +310,9 @@ footer {
     }
 
     main h1 {
-      text-align: center;
+      transform: translate(0);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer {
