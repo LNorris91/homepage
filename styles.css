@@ -46,7 +46,7 @@ header {
 .headerPic {
   height: 300px;
   position: relative;
-  box-shadow: rgb(141, 141, 141) -2px 2px 10px;
+  box-shadow: rgb(112, 112, 112) -2px 2px 10px;
 }
 
 .headerPic img {
@@ -60,7 +60,7 @@ header {
   font-size: 80px;
   margin: 0px;
   color: white;
-  text-shadow: rgb(141, 141, 141) -2px 2px 3px;
+  text-shadow: rgb(74, 74, 74) -2px 2px 5px;
 }
 
 .aboutMe {
@@ -103,6 +103,7 @@ main {
 main h1 {
   left: 0px;
   margin-bottom: 10px;
+  transition: transform 1s;
 }
 
 .projectContainer {
@@ -123,12 +124,13 @@ main h1 {
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
   will-change: transform box-shadow;
+  background-color: rgb(212, 212, 212);
+
 }
 
 .project:hover {
   transform: translate(-4px, -4px);
   box-shadow: rgb(141, 141, 141) 8px 8px 15px;
-  cursor: pointer;
 }
 
 .projectScreenshot {
@@ -136,7 +138,7 @@ main h1 {
   align-items: center;
   justify-content: center;
   height: 60%;
-  background-color: rgb(144, 106, 34);
+  background-color: rgb(144, 106, 34); */
   text-align: center;
   font-size: 1.8rem;
   color: white;
@@ -172,6 +174,17 @@ main h1 {
 .projectLinks button:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+
+#project1 .projectScreenshot {
+  background-image: url(screenshots/Etch-a-sketch.png);
+  background-size: cover;
+  background-position: center;
+}
+#project2 .projectScreenshot {
+  background-image: url(screenshots/tic-tac-toe.png);
+  background-size: cover;
+  background-position: center;
 }
 
 footer {
@@ -230,7 +243,6 @@ footer {
   #photoName {
     font-size: 50px;
     transform: translate(290px, -190px);
-    text-shadow: rgb(74, 74, 74) -2px 2px 3px;
   }
 
   .aboutMe {
@@ -252,6 +264,10 @@ footer {
     float: left;
     width: 140px;
     height: 100px;
+  }
+
+  main h1 {
+    transform: translateX(100px);
   }
 
   @media (max-width: 620px) {
