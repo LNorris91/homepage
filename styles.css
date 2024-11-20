@@ -74,8 +74,7 @@ header {
 .buttonLinks {
   display: flex;
   gap: 18px;
-  justify-self: flex-end;
-  transform: translatex(10px);
+  float: right;
 }
 
 button {
@@ -257,7 +256,7 @@ footer {
 
   #photoName {
     font-size: 50px;
-    transform: translate(280px, -215px);
+    transform: translate(280px, -230px);
   }
 
   .aboutMe {
@@ -276,7 +275,7 @@ footer {
   #block {
     float: left;
     width: 140px;
-    height: 175px;
+    height: 185px;
   }
 
   main h1 {
