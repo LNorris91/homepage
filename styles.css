@@ -19,6 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(59, 59, 59);
 }
 
 header,
@@ -30,7 +31,7 @@ main,
 
 #headerBackground {
   position: absolute;
-  background-color: rgb(14, 153, 185);
+  background-color: rgb(40, 40, 40);
   width: 100vw;
   height: 450px;
   z-index: -1;
@@ -46,7 +47,7 @@ header {
 .headerPic {
   height: 300px;
   position: relative;
-  box-shadow: rgb(112, 112, 112) -2px 2px 10px;
+  box-shadow: rgb(0, 0, 0) -2px 2px 10px;
 }
 
 .headerPic img {
@@ -59,14 +60,15 @@ header {
   left: 10px;
   font-size: 80px;
   margin: 0px;
-  color: white;
+  color: rgb(232, 232, 232);
   text-shadow: rgb(74, 74, 74) -2px 2px 5px;
 }
 
 .aboutMe {
-  background-color: white;
+  background-color: rgb(220, 220, 220);
   padding: 15px 30px 15px 15px;
-  box-shadow: rgb(141, 141, 141) 2px 2px 10px;
+  box-shadow: rgb(0, 0, 0) 2px 2px 10px;
+  height: auto;
 }
 
 .buttonLinks {
@@ -105,6 +107,7 @@ main h1 {
   margin-bottom: 10px;
   width: 130px;
   transition: transform 1s;
+  color: white;
 }
 
 .projectContainer {
@@ -120,7 +123,7 @@ main h1 {
   height: 300px;
   display: flex;
   flex-direction: column;
-  box-shadow: rgb(141, 141, 141) 2px 2px 10px;
+  box-shadow: rgb(0, 0, 0) 2px 2px 10px;
   transition-property: transform box-shadow;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
@@ -130,19 +133,13 @@ main h1 {
 
 .project:hover {
   transform: translate(-4px, -4px);
-  box-shadow: rgb(141, 141, 141) 8px 8px 15px;
+  box-shadow: rgb(0, 0, 0) 8px 8px 15px;
 }
 
 .projectScreenshot {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 60%;
-  background-color: rgb(144, 106, 34);
-  text-align: center;
-  font-size: 1.8rem;
-  color: white;
-  padding: 50px;
+  height: 190px;
+  background-size: cover;
+  background-position: center;
 }
 
 .projectInfo {
@@ -177,19 +174,36 @@ main h1 {
 }
 
 #project1 .projectScreenshot {
-  background-image: url(screenshots/Etch-a-sketch.png);
-  background-size: cover;
-  background-position: center;
+  background-image: url(screenshots/weather.png);
 }
+
 #project2 .projectScreenshot {
   background-image: url(screenshots/tic-tac-toe.png);
-  background-size: cover;
-  background-position: center;
+}
+
+#project3 .projectScreenshot {
+  background-image: url(screenshots/to-do.png);
+}
+
+#project4 .projectScreenshot {
+  background-image: url(screenshots/RPS.png);
+}
+
+#project5 .projectScreenshot {
+  background-image: url(screenshots/calculator.png);
+}
+
+#project6 .projectScreenshot {
+  background-image: url(screenshots/Etch-a-sketch.png);
+}
+
+#project7 .projectScreenshot {
+  background-image: url(screenshots/sign-up.png);
 }
 
 footer {
   width: 100vw;
-  background-color: rgb(14, 153, 185);
+  background-color: rgb(40, 40, 40);
   display: flex;
   justify-content: center;
   margin-top: 60px;
@@ -228,6 +242,7 @@ footer {
 #footerButtons {
   justify-self: flex-start;
   transform: translate(-7px, 5px);
+  filter: invert();
 }
 
 @media (max-width: 1000px) {
@@ -242,13 +257,12 @@ footer {
 
   #photoName {
     font-size: 50px;
-    transform: translate(290px, -190px);
+    transform: translate(280px, -215px);
   }
 
   .aboutMe {
     transform: translate(-75px, 120px);
     width: 300px;
-    height: 310px;
   }
 
   .aboutMe h2 {
@@ -257,13 +271,12 @@ footer {
 
   .aboutMe p {
     font-size: 0.8rem;
-    margin-bottom: -10px;
   }
 
   #block {
     float: left;
     width: 140px;
-    height: 100px;
+    height: 175px;
   }
 
   main h1 {
