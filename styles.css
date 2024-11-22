@@ -256,7 +256,7 @@ footer {
 
   #photoName {
     font-size: 50px;
-    transform: translate(280px, -230px);
+    transform: translate(275px, -242px);
   }
 
   .aboutMe {
@@ -274,8 +274,8 @@ footer {
 
   #block {
     float: left;
-    width: 140px;
-    height: 185px;
+    width: 150px;
+    height: 200px;
   }
 
   main h1 {
